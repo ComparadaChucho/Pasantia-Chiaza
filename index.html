@@ -12,56 +12,86 @@
     </head>
 
     <body>
-        <h1>Hello World!</h1>
+        <h1>My Goals for the year</h1>
 
         <hr>
 
-        <h2>I'm Ready to Learn HTML</h2>
-        <p>This is my first web page.</p>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#html">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>
+                </li>
+            </ul>
+        </nav>
 
-        <h3>My daily Schedule</h3>
-        <p>Let me tell you how:</p>
-        <ol>
-            <li>I learn more about web dev.</li>
-            <li>I plan out my schedule.</li>
-            <li>I use resources from <abbr title="Mozilla Developer Network">MDN</abbr>.</li>
-        </ol>
+        <hr>
+
+        <section id="html">
+            <h2>I'm Ready to Learn HTML</h2>
+            <p>This is my first web page.</p>
+
+            <h3>My daily Schedule</h3>
+            <p>Let me tell you how:</p>
+            <ol>
+                <li>I learn more about web dev.</li>
+                <li>I plan out my schedule.</li>
+                <li>I use resources from <abbr title="Mozilla Developer Network">
+                        <a href="https://developer.mozilla.org/">MDN</a>
+                    </abbr>.</li>
+            </ol>
+        </section> 
 
         <hr>
 
-        <h2>I Am Also Planning a Vacation</h2>
-        <p>I've been workin hard en <em>need a gateway</em></p>
-        <p>I live in <abbr title="San Lorenzo">SL</abbr> so I want visit a beach.</p>
+        <section id="vacation">
+            <h2>I Am Also Planning a Vacation</h2>
+            <p>I've been workin hard en <em>need a gateway</em></p>
+            <p>I live in <abbr title="San Lorenzo">SL</abbr> so I want visit a beach.</p>
 
-        <h3>Place I'd Like to Visit</h3>
-        <ul>
-            <li>
-                <p>I've hear good things about the Caribbean.</p>
-            </li>
-            <li>
-                <p>I've hear good thigs about going here:</p>
-                <address>
-                    <!-- TODO: ADD more places -->
-                    Margaritaville Island Reserve Riviera Cancun<br>
-                    Bahia Petempich Puerto Morelos, Mexico<br>
-                    Colonia Morelos, Mexico 77580
-                </address>
-            </li>
-        </ul>
-        <h3>Places I Want to Avoid</h3>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>I hear this is <strong>cold!</strong></dd>
+            <h3>Place I'd Like to Visit</h3>
+            <ul>
+                <li>
+                    <p>I've hear good things about the Caribbean.</p>
+                </li>
+                <li>
+                    <p>I've hear good thigs about going here:</p>
+                    <address>
+                        <!-- TODO: ADD more places -->
+                        Margaritaville Island Reserve Riviera Cancun<br>
+                        Bahia Petempich Puerto Morelos, Mexico<br>
+                        Colonia Morelos, Mexico 77580
+                    </address>
+                </li>
+            </ul>
+            <h3>Places I Want to Avoid</h3>
+            <dl>
+                <dt>North Pole</dt>
+                <dd>I hear this is <strong>cold!</strong></dd>
 
-            <dt>South Pole</dt>
-            <dd>This is also cold</dd>
+                <dt>South Pole</dt>
+                <dd>This is also cold</dd>
 
-            <dt>Mountain tops</dt>
-            <dd>These are also cold</dd>
-        </dl>
+                <dt>Mountain tops</dt>
+                <dd>These are also cold</dd>
+            </dl>
+        </section>
 
         <hr>
-        &lt;&lt;&lt; &copy; ChuCho Comparada &gt;&gt;&gt;
+        <!-- 
+        Link Text Rules:
+            1. Evita imprimir el link completo de la pagina.
+            2. Evita la frase "link a", ya sabemos que es un link
+            3. Mantene el texto del link corto. Tema en concreto. Sin oraciones.
+            4. No links que digan "click here". No proporciona ningun significado. 
+        -->
+
+        &lt;&lt;&lt; &copy; <a href="about.html">ChuCho Comparada</a> &gt;&gt;&gt;
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
     </body>
 
 </html>
