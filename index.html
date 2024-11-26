@@ -12,105 +12,137 @@
     </head>
 
     <body>
-        <h1>My Goals for the year</h1>
+        <header>
+            <h1>My Goals for the year</h1>
+
+            <!-- 
+            <nav aria-labelledby="primary-navigation">
+                <h2 id="primary-navigation">Primary Navigation</h2>
+                ...
+            -->
+
+            <nav aria-label="primary-navigation">
+                <ul>
+                    <li>
+                        <a href="#html">Learn HTML</a>
+                    </li>
+                    <li>
+                        <a href="#vacation">Planning a Vacation</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
         <hr>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="#html">Learn HTML</a>
-                </li>
-                <li>
-                    <a href="#vacation">Planning a Vacation</a>
-                </li>
-            </ul>
-        </nav>
-
-        <hr>
-
-        <section id="html">
-            <h2>I'm Ready to Learn HTML</h2>
-            <p>This is my first web page.</p>
-            <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="200" height="200">
-            <figure>
-                <figcaption> An Example of HTML5 code</figcaption>
-                <p>
-                    <code>&lt;h1&gt;HelloWorld!&lt;/h1&gt;</code>
-                </p>
-            </figure>
-
-            <h3>My daily Schedule</h3>
-            <p>Let me tell you how:</p>
-            <ol>
-                <li>I learn more about web dev.</li>
-                <li>I plan out my schedule.</li>
-                <li>I use resources from <abbr title="Mozilla Developer Network">
-                        <a href="https://developer.mozilla.org/">MDN</a>
-                    </abbr>.</li>
-            </ol>
-        </section> 
-
-        <hr>
-
-        <section id="vacation">
-            <h2>I Am Also Planning a Vacation</h2>
-            <p>I've been workin hard en <em>need a gateway</em></p>
-            <p>I live in <abbr title="San Lorenzo">SL</abbr> so I want visit a beach.</p>
-
-            <h3>Places I'd Like to Visit</h3>
-            <ul>
-                <li>
-                    <p>I've hear good things about the Caribbean.</p>
+        <main>
+            <article id="html">
+                <h2>I'm Ready to Learn HTML</h2>
+                <p>This is my first web page.</p>
+                <section>
+                    <h3>HTML5</h3>
+                    <img src="img/html_logo_300x300.png" alt="HTML5 Logo" title="I am learning HTML5" width="200" height="200">
                     <figure>
-                        <img src="img/caribbean.jpg" alt="Caribbean Beach" title = "I want to visit a Caribbean beach" width="400" height="225" loading="lazy">
-                        <figcaption>
-                            Caribbean Beach Getaway
-                        </figcaption>
+                        <figcaption> An Example of HTML5 code</figcaption>
+                        <p>
+                            <code>&lt;h1&gt;HelloWorld!&lt;/h1&gt;</code>
+                        </p>
                     </figure>
-                </li>
-                <li>
-                    <p>I've hear good thigs about going here:</p>
-                    <address>
-                        <!-- TODO: ADD more places -->
-                        Margaritaville Island Reserve Riviera Cancun<br>
-                        Bahia Petempich Puerto Morelos, Mexico<br>
-                        Colonia Morelos, Mexico 77580
-                    </address>
-                    <figure>
-                        <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'Clock Somewehere!" width="400" height="267" loading="lazy">
-                        <figcaption>
-                            A Caribbean Vacation Image
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-            <h3>Places I Want to Avoid</h3>
-            <dl>
-                <dt>North Pole</dt>
-                <dd>I hear this is <strong>cold!</strong></dd>
+                </section>
+                <section>
+                    <h3>My daily Schedule</h3>
+                    <p>Let me tell you how:</p>
+                    <ol>
+                        <li>I learn more about web dev.</li>
+                        <li>I plan out my schedule.</li>
+                        <li>I use resources from <abbr title="Mozilla Developer Network">
+                                <a href="https://developer.mozilla.org/">MDN</a>
+                            </abbr>.</li>
+                    </ol>
+                    <aside>
+                        <details>
+                            <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                            <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3 hours</time> every morning.</p>
+                        </details>
+                    </aside>
+                </section>
+            </article> 
 
-                <dt>South Pole</dt>
-                <dd>This is also cold</dd>
+            <hr>
 
-                <dt>Mountain tops</dt>
-                <dd>These are also cold</dd>
-            </dl>
-        </section>
+            <article id="vacation">
+                <h2>I Am Also Planning a Vacation</h2>
+                <p>I've been workin hard en <em>need a gateway</em></p>
+                <p>I live in <abbr title="San Lorenzo">SL</abbr> so I want visit a beach.</p>
+
+                <section>
+                    <h3>Places I'd Like to Visit</h3>
+                    <ul>
+                        <li>
+                            <p>I've hear good things about the Caribbean.</p>
+                            <figure>
+                                <img src="img/caribbean.jpg" alt="Caribbean Beach" title = "I want to visit a Caribbean beach" width="400" height="225" loading="lazy">
+                                <figcaption>
+                                    Caribbean Beach Getaway
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <p>I've hear good thigs about going here:</p>
+                            <address>
+                                Margaritaville Island Reserve Riviera Cancun<br>
+                                Bahia Petempich Puerto Morelos, Mexico<br>
+                                Colonia Morelos, Mexico 77580
+                            </address>
+                            <figure>
+                                <img src="img/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'Clock Somewehere!" width="400" height="267" loading="lazy">
+                                <figcaption>
+                                    A Caribbean Vacation Image
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                
+                <!-- TODO: ADD more places -->
+
+                <!-- 
+                AVOID:
+                    <div></div>
+                    <span></span>
+                -->
+
+                <section>
+                    <h3>Places I Want to Avoid</h3>
+                    <dl>
+                        <dt>North Pole</dt>
+                        <dd>I hear this is <strong>cold!</strong></dd>
+
+                        <dt>South Pole</dt>
+                        <dd>This is also cold</dd>
+
+                        <dt>Mountain tops</dt>
+                        <dd>These are also cold</dd>
+                    </dl>
+                </section>
+            </article>
+        </main>
 
         <hr>
-        <!-- 
-        Link Text Rules:
-            1. Evita imprimir el link completo de la pagina.
-            2. Evita la frase "link a", ya sabemos que es un link
-            3. Mantene el texto del link corto. Tema en concreto. Sin oraciones.
-            4. No links que digan "click here". No proporciona ningun significado. 
-        -->
-
-        &lt;&lt;&lt; &copy; <a href="about.html">ChuCho Comparada</a> &gt;&gt;&gt;
-        <p>
-            <a href="#">Back to Top</a>
-        </p>
+        <footer>
+            <!-- 
+            Link Text Rules:
+                1. Evita imprimir el link completo de la pagina.
+                2. Evita la frase "link a", ya sabemos que es un link
+                3. Mantene el texto del link corto. Tema en concreto. Sin oraciones.
+                4. No links que digan "click here". No proporciona ningun significado. 
+            -->
+            <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">ChuCho Comparada</a> &gt;&gt;&gt;
+            </p>
+            <p>
+                <a href="#">Back to Top</a>
+            </p>
+        </footer>
     </body>
 
 </html>
