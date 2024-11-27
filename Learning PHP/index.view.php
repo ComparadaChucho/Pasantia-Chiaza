@@ -6,6 +6,7 @@
 
 </head>
 <body>
+<!-- This is what we see in the page -->
 <h1>Recommended Books</h1>
 
 <ul>
