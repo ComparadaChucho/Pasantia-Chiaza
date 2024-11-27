@@ -21,6 +21,7 @@ Los archivos dentro de este directorio están organizados por las secciones del 
 - **Episode 10:** Separate Logic From the Template
 - **Episode 11:** Technical Check-in #1 (With Exam)
 <br />
+
 **Dynamic Web Applications:**
 - **Episode 12:** Page Links
 - **Episode 13:** PHP Partials
