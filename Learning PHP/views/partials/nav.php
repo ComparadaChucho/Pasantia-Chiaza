@@ -1,14 +1,4 @@
-<!doctype html>
-<html lang="en" class="h-full bg-gray-100">
-<head>
-    <meta charset="UTF-8">
-    <title>Demo</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-
-</head>
-<body class="h-full">
-    <div class="min-h-full">
-        <nav class="bg-gray-800">
+<nav class="bg-gray-800">
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="flex h-16 items-center justify-between">
                     <div class="flex items-center">
@@ -19,12 +9,12 @@
                         <div class="hidden md:block">
                             <div class="ml-10 flex items-baseline space-x-4">
                                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+                                <a href="/" class="rounded-md px-3 py-2 text-sm font-medium <?= urlIs('/') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?>"
                                    aria-current="page">Home</a>
                                 <a href="/about.php"
-                                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">About</a>
+                                   class="rounded-md px-3 py-2 text-sm font-medium <?= urlIs('/about.php') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?>">About</a>
                                 <a href="/contact.php"
-                                   class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Contact</a>
+                                   class="rounded-md px-3 py-2 text-sm font-medium <?= urlIs('/contact.php') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?>">Contact</a>
                             </div>
                         </div>
                     </div>
@@ -56,15 +46,15 @@
                                 </div>
 
                                 <!--
-                                  Dropdown menu, show/hide based on menu state.
+Dropdown menu, show/hide based on menu state.
 
-                                  Entering: "transition ease-out duration-100"
+Entering: "transition ease-out duration-100"
                                     From: "transform opacity-0 scale-95"
                                     To: "transform opacity-100 scale-100"
                                   Leaving: "transition ease-in duration-75"
                                     From: "transform opacity-100 scale-100"
                                     To: "transform opacity-0 scale-95"
-                                -->
+-->
                                 <div class="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black/5 focus:outline-none"
                                      role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button"
                                      tabindex="-1">
@@ -148,18 +138,3 @@
                 </div>
             </div>
         </nav>
-
-        <header class="bg-white shadow">
-            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                <h1 class="text-3xl font-bold tracking-tight text-gray-900">Contact Us</h1>
-            </div>
-        </header>
-        <main>
-            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                <p>Hello. Welcome to the contact page!</p>
-            </div>
-        </main>
-    </div>
-
-</body>
-</html>
