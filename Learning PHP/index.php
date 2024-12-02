@@ -3,22 +3,16 @@
 require 'functions.php';
 //require 'router.php';
 
-class Person {
-    public $name;
-    public $age;
+// connect to our MySWL database
+$dsn = "mysql:host=localhost;port=3306;dbname=my-app;user=root;charset=utf8mb4";
 
-    public function breathe()
-    {
-        echo $this-> name . ' is breathing';
-    }
+$pdo = new PDO($dsn);
+
+$statement = $pdo -> prepare("SELECT * FROM posts");
+$statement -> execute();
+
+$posts = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+foreach ($posts as $post){
+    echo "<li>" . $post['title'] . "</li>";
 }
-
-$person = new Person();
-
-$person -> name = 'John Doe';
-$person -> age = 25;
-
-//dd($person);
-//dd($person->name);
-//dd($person->age);
-$person->breathe();
