@@ -1,5 +1,9 @@
 <?php
 
+Namespace Core;
+
+use PDO;
+
 class Database
 {
     public $connection;
