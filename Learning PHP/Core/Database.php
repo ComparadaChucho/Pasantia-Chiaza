@@ -1,6 +1,6 @@
 <?php
 
-Namespace Core;
+namespace Core;
 
 use PDO;
 
@@ -20,7 +20,7 @@ class Database
 
     public function query($query, $params = [])
     {
-        $this->statement = $this->connection->prepare("$query");
+        $this->statement = $this->connection->prepare($query);
 
         $this->statement->execute($params);
 
@@ -40,7 +40,8 @@ class Database
     public function findOrFail()
     {
         $result = $this->find();
-        if(! $result){
+
+        if (! $result) {
             abort();
         }
 
