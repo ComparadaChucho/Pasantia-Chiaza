@@ -14,8 +14,10 @@
                            aria-current="page">Home</a>
                         <a href="/about"
                            class="rounded-md px-3 py-2 text-sm font-medium <?= urlIs('/about') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?>">About</a>
-                        <a href="/notes"
-                           class="rounded-md px-3 py-2 text-sm font-medium <?= urlIs('/notes') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?>">Notes</a>
+                        <?php if ($_SESSION['user'] ?? false) : ?>
+                            <a href="/notes"
+                               class="rounded-md px-3 py-2 text-sm font-medium <?= urlIs('/notes') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?>">Notes</a>
+                        <?php endif; ?>
                         <a href="/contact"
                            class="rounded-md px-3 py-2 text-sm font-medium <?= urlIs('/contact') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?>">Contact</a>
                     </div>
@@ -47,10 +49,21 @@
                                          alt="">
                                 </button>
                             <?php else : ?>
-                                <a href="/register" class="text-white">Register</a>
+                                <a href="/register" class="rounded-md px-3 py-2 text-sm font-medium <?= urlIs('/register') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?>">Register</a>
+                                <a href="/login" class="rounded-md px-3 py-2 text-sm font-medium <?= urlIs('/login') ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white' ?>">Log In</a>
                             <?php endif; ?>
                         </div>
                     </div>
+
+                    <?php if ($_SESSION['user'] ?? false) : ?>
+                        <div class="ml-3">
+                            <form method="POST" action="/session">
+                                <input type="hidden" name="_method" value="DELETE" />
+
+                                <button class="text-white">Log Out</button>
+                            </form>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
             <div class="-mr-2 flex md:hidden">
