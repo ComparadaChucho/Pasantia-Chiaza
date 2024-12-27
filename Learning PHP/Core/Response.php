@@ -1,6 +1,6 @@
 <?php
 
-Namespace Core;
+namespace Core;
 
 class Response {
     const NOT_FOUND = 404;
