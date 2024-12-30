@@ -1,0 +1,16 @@
+{
+    "name": "usuario/www",
+    "authors": [
+        {
+            "name": "Juan Pablo Comparada",
+            "email": "110425949+ComparadaChucho@users.noreply.github.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Core/"
+        }
+    }
+}
