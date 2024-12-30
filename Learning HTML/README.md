@@ -7,7 +7,7 @@ Puedes encontrar el curso en este enlace: [Curso en YouTube](https://youtu.be/kU
 
 ## 🗂 Estructura de la Carpeta
 La carpeta contiene 2 carpetas, 1 con los archivos que abarcan el capitulo 1 al 9 del curso (practice) y la otra (Taco Shop Ex) contiene los archivos de la clase 10 que es un ejercico propuesto por el creador del curso.
-Aqui esta el istado de cada capitulo:
+Aqui esta el listado de cada capitulo:
 
 - **Capitulo 1:** Getting Started.
 - **Capitulo 2:** Head Element.
@@ -22,3 +22,5 @@ Aqui esta el istado de cada capitulo:
 
 ## 📅 Planes a Futuro
 Una vez terminado este curso, seguire con un curso de PHP por un creador de contenido llamado "laracasts".
+
+## ✅ Curso Terminado!
