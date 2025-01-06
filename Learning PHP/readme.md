@@ -85,4 +85,6 @@ Los archivos dentro de este directorio están organizados por las secciones del 
 - **Episode 50:** The Next Step in Your PHP Journey
 
 ## 🚀 Más Aprendizaje
-Una vez que termine este curso, planeo comenzar con el curso de Laravel disponible también en Laracasts. Además, puedes encontrar mi progreso en otros temas como HTML en este mismo repositorio.
+Una vez que termine este curso, planeo comenzar con el curso de Laravel disponible también en Laracasts.
+
+## ✅ Curso Terminado!
