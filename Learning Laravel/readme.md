@@ -1,6 +1,6 @@
 # 30 Days to Learn Laravel
 
-Esta carpeta contiene mi progreso en el curso de Laravel, [30 Days to Learn Laravel](30daystolearnlaravel.com), que estoy siguiendo en [Laracasts](https://laracasts.com/series/30-days-to-learn-laravel-11). Subo los archivos que se hayan modificado al final de cada episodio a modo de documentar lo que voy aprendiendo.
+Esta carpeta contiene mi progreso en el curso de Laravel, [30 Days to Learn Laravel](https://laracasts.com/series/30-days-to-learn-laravel-11), que estoy siguiendo en [Laracasts](https://laracasts.com/series/30-days-to-learn-laravel-11). Subo los archivos que se hayan modificado al final de cada episodio a modo de documentar lo que voy aprendiendo.
 
 ## 📚 Sobre el Curso
 El curso te enseña todo lo que necesitas saber para poder empezar a desarrollar apps web con laravel y al final de este haremos una Job Board platform. Este curso utiliza la version Laravel 11 
