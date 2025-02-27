@@ -6,7 +6,7 @@ Esta carpeta contiene mi progreso en el curso de Laravel, [30 Days to Learn Lara
 El curso te enseña todo lo que necesitas saber para poder empezar a desarrollar apps web con laravel y al final de este haremos una Job Board platform. Este curso utiliza la version Laravel 11 
 
 ## 🗂 Estructura de la Carpeta
-Los archivos dentro de este directorio están organizados por los episodios del curso, una vez termine un episodio subire los archivos y creare un tag con nombre del episodio con una descripcion del mismo. <br />
+Hay 2 carpetas, una llamada example que abarca lo aprendido del capitulo 1 al 26 y luego habra una llamada pixel-positions que es la carpeta en la que se encontrara la Job Board Platform. Ademas se hiceron tags por cada capitulo para poder ver facilmente el desarrollo del curso.<br />
 
 Estos son todos los episodios: <br />
 
