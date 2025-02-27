@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+@source "../views";
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;700&display=swap');
+@font-face {
+    font-family: 'Hanken Grotesk';
+    src: url('/path-to-font/HankenGrotesk.woff2') format('woff2');
+}
+  
+
+:root {
+    --custom-black: #060606;
+    --font-hanken: 'Hanken Grotesk', sans-serif;
+    --font-size-2xs: 0.625rem; 
+}
+
+.bg-custom-black {
+  background-color: var(--custom-black);
+}
+
+.font-hanken {
+    font-family: var(--font-hanken);
+}
+  
+.text-2xs {
+    font-size: var(--font-size-2xs);
+}
