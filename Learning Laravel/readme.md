@@ -58,3 +58,6 @@ Estos son todos los episodios: <br />
 
 ## 🚀 Más Aprendizaje
 Una vez que termine este curso, comenzare a desarrollar una app web para una empresas para generar informes de calibracion de valvulas.
+
+## ✅ Curso Terminado!
+Con este curso terminado concluyo con los 3 cursos de aprendizaje de HTML, PHP y Laravel.
